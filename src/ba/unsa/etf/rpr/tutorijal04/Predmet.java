@@ -7,7 +7,7 @@ public class Predmet {
     private String naziv;
     private Integer ectsKrediti;
     private Boolean izborni;
-    private Semestar semestar;
+    private Integer semestar;
 
     public Predmet(String naziv, Integer ectsKrediti, Boolean izborni) {
 
@@ -25,7 +25,7 @@ public class Predmet {
         return ectsKrediti;
     }
 
-    public Semestar dajSemestar() {
+    public Integer dajSemestar() {
         return semestar;
     }
 
