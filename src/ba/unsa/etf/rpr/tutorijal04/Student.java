@@ -6,13 +6,15 @@ public class Student {
     private String ime;
     private String prezime;
     private Integer brojIndeksa;
-    private Integer opterecenje;
-    private Semestar semestar;
-    private ArrayList<Predmet> predmeti;
-    private final Integer brojIzbornih = null;
-    private final Integer brojObaveznih = null;
+    private Integer brojKredita;
+    private Integer brojIzbornihTrenutno;
+    private Integer brojObaveznihTrenutno;
+    private Integer semestarStudenta;
+    private final Integer ukupanBrojKredita = 30;
+    private final Integer brojIzbornih = 0;
+    private final Integer brojObaveznih = 0;
 
-    public Student(String ime, String prezime, Integer brojIndeksa, Semestar semestar) {
+    public Student(String ime, String prezime, Integer brojIndeksa, Integer semestarStudenta) {
 
     }
     public String dajIme() {
@@ -27,27 +29,27 @@ public class Student {
         return brojIndeksa;
     }
 
-    public Integer dajOpterecenje() {
-        return opterecenje;
+    public Integer dajBrojKredita() {
+        return brojKredita;
     }
 
-    public Semestar dajSemestar() {
-        return semestar;
-    }
-
-    public final Integer dajBrojIzbornih() {
+    public Integer dajBrojIzbornih() {
         return brojIzbornih;
     }
 
-    public final Integer dajBrojObaveznih() {
+    public Integer dajBrojObaveznih() {
         return brojObaveznih;
     }
 
-    public ArrayList<Predmet> dajPredmete() {
-        return predmeti;
+    public void postaviBrojKredita(Integer brojKredita) {
+        this.brojKredita = brojKredita;
     }
 
-    public void dodajPredmet(Predmet predmet) {
+    public void postaviBrojIzbornihTrenutno(Integer brojIzbornihTrenutno) {
+        this.brojIzbornihTrenutno = brojIzbornihTrenutno;
+    }
 
+    public void postaviBrojObaveznihTrenutno(Integer brojObaveznihTrenutno) {
+        this.brojObaveznihTrenutno = brojObaveznihTrenutno;
     }
 }
