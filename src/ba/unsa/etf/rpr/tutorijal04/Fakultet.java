@@ -24,5 +24,10 @@ public class Fakultet {
     public Set<Upis> getSpisakUpisa() {
         return spisakUpisa;
     }
+
+    public void dodajStudenta(Student s) {
+        spisakStudenata.add(s);
+    }
+
 }
 
