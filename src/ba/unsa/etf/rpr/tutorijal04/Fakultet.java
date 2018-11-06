@@ -29,5 +29,9 @@ public class Fakultet {
         spisakStudenata.add(s);
     }
 
+    public void dodajPredmet(Predmet p) {
+        spisakPredmeta.add(p);
+    }
+
 }
 
