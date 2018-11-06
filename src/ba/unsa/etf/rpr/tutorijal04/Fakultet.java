@@ -33,5 +33,9 @@ public class Fakultet {
         spisakPredmeta.add(p);
     }
 
+    public void upisiStudenta(Upis upis) {
+        spisakUpisa.add(upis);
+    }
+
 }
 
