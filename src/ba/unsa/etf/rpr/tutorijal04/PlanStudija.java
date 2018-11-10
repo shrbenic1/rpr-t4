@@ -8,19 +8,20 @@ import java.util.Map;
 public class PlanStudija {
     private Map<Integer, List<Predmet>> planStudija = new HashMap<>();
 
-    public PlanStudija(Map<Integer, List<Predmet>> planStudija) {
-        this.planStudija = planStudija;
-    }
-
     public void dodajPredmet(Integer semestar, Predmet p) {
+        List<Predmet> novaLista = new ArrayList<>();
+        if(planStudija.isEmpty()) {
+            novaLista.add(p);
+            planStudija.put(semestar, novaLista);
+            return;
+        }
         for (Map.Entry<Integer, List<Predmet>> entry : planStudija.entrySet()) {
             if (entry.getKey().equals(semestar)) {
                 entry.getValue().add(p);
-            } else {
-                List<Predmet> novaLista = new ArrayList<>();
-                novaLista.add(p);
-                planStudija.put(semestar, novaLista);
+                return;
             }
         }
+        novaLista.add(p);
+        planStudija.put(semestar, novaLista);
     }
 }
