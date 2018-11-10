@@ -17,10 +17,14 @@ public class Fakultet {
     }
 
     public void upisiStudenta(Upis upis) {
+        spisakStudenata.add(upis.getStudent());
+        spisakPredmeta.add(upis.getPredmet());
         spisakUpisa.add(upis);
     }
 
     public void upisiStudenta(Student s, PlanStudija planStudija, Predmet p) {
+        spisakStudenata.add(s);
+        spisakPredmeta.add(p);
         spisakUpisa.add(new Upis(planStudija, p, s));
     }
 
