@@ -40,5 +40,18 @@ public class Fakultet {
     public void upisiStudenta(Student s, PlanStudija planStudija, Predmet p) {
         spisakUpisa.add(new Upis(planStudija, p, s));
     }
+
+    public String dajSpisak(Predmet p) {
+        String spisak = "";
+        String trazeniPredmet = p.getIme();
+        for(Upis upis : spisakUpisa){
+            String predmet = upis.getPredmet().getIme();
+            if(predmet.equals(trazeniPredmet)) {
+                spisak += upis.getStudent().getIme() + " " + upis.getStudent().getPrezime() + "\n";
+            }
+        }
+        return spisak;
+    }
+    }
 }
 
