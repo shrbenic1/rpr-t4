@@ -20,7 +20,7 @@ public class Predmet {
         return ects;
     }
 
-    public Boolean getIzborni() {
+    public Boolean isIzborni() {
         return izborni;
     }
 }
