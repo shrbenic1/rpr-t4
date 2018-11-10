@@ -11,7 +11,7 @@ class StudentTest {
         assertAll(
                 () -> assertEquals("Sven", student.getIme()),
                 () -> assertEquals("Hrbenić", student.getPrezime()),
-                () -> assertEquals((Integer)17901, student.getBrojIndeksa())
+                () -> assertEquals((Integer) 17901, student.getBrojIndeksa())
         );
     }
 }
