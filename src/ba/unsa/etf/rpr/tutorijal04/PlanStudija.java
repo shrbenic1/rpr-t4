@@ -11,10 +11,6 @@ public class PlanStudija {
         this.planStudija = planStudija;
     }
 
-    public Map<Integer, List<Predmet>> getPlanStudija() {
-        return planStudija;
-    }
-
     public void dodajPredmet(Integer semestar, Predmet p) {
 
     }
