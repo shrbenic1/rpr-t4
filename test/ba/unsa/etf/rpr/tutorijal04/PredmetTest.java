@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PredmetTest {
     @Test
-    void studentTest() {
+    void predmetTest() {
         Predmet predmet = new Predmet("RPR", 5, true);
         assertAll(
                 () -> assertEquals("RPR", predmet.getIme()),
