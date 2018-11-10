@@ -17,7 +17,7 @@ class PlanStudijaTest {
         planStudija.dodajPredmet(5, digitalniSistemiUpravljanja);
         planStudija.dodajPredmet(1, osnoveRacunarstva);
         planStudija.dodajPredmet(1, inzenjerskaMatematika1);
-        Upis upis = new Upis(planStudija, razvojProgramskihRjesenja , student);
+        Upis upis = new Upis(planStudija, razvojProgramskihRjesenja, student);
         assertEquals(planStudija, upis.getPlanStudija());
     }
 
