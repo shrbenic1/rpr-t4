@@ -37,5 +37,8 @@ public class Fakultet {
         spisakUpisa.add(upis);
     }
 
+    public void upisiStudenta(Student s, PlanStudija planStudija, Predmet p) {
+        spisakUpisa.add(new Upis(planStudija, p, s));
+    }
 }
 
