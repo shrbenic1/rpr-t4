@@ -20,6 +20,6 @@ class FakultetTest {
         fakultet.dodajPredmet(predmet1);
         fakultet.upisiStudenta(new Upis(planStudija, predmet1, student1));
         fakultet.upisiStudenta(student, planStudija, predmet1);
-        assertEquals("Sven Hrbenić 17901\nMeho Mehić 17000\n", fakultet.dajSpisak(predmet1));
+        assertEquals("Meho Mehić 17000\nSven Hrbenić 17901\n", fakultet.dajSpisak(predmet1));
     }
 }
