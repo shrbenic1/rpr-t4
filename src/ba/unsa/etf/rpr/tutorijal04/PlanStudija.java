@@ -10,7 +10,7 @@ public class PlanStudija {
 
     public void dodajPredmet(Integer semestar, Predmet p) {
         List<Predmet> novaLista = new ArrayList<>();
-        if(planStudija.isEmpty()) {
+        if (planStudija.isEmpty()) {
             novaLista.add(p);
             planStudija.put(semestar, novaLista);
             return;
