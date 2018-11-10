@@ -13,11 +13,10 @@ public class PlanStudija {
     }
 
     public void dodajPredmet(Integer semestar, Predmet p) {
-        for(Map.Entry<Integer, List<Predmet>> entry : planStudija.entrySet()) {
-            if(entry.getKey().equals(semestar)){
+        for (Map.Entry<Integer, List<Predmet>> entry : planStudija.entrySet()) {
+            if (entry.getKey().equals(semestar)) {
                 entry.getValue().add(p);
-            }
-            else{
+            } else {
                 List<Predmet> novaLista = new ArrayList<>();
                 novaLista.add(p);
                 planStudija.put(semestar, novaLista);
