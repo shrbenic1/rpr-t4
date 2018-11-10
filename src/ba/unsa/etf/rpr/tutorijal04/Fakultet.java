@@ -1,23 +1,12 @@
 package ba.unsa.etf.rpr.tutorijal04;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Fakultet {
-    private Set<Student> spisakStudenata;
-    private Set<Predmet> spisakPredmeta;
-    private Set<Upis> spisakUpisa;
-
-    public Set<Student> getSpisakStudenata() {
-        return spisakStudenata;
-    }
-
-    public Set<Predmet> getSpisakPredmeta() {
-        return spisakPredmeta;
-    }
-
-    public Set<Upis> getSpisakUpisa() {
-        return spisakUpisa;
-    }
+    private Set<Student> spisakStudenata = new HashSet<>();
+    private Set<Predmet> spisakPredmeta = new HashSet<>();
+    private Set<Upis> spisakUpisa = new HashSet<>();
 
     public void dodajStudenta(Student s) {
         spisakStudenata.add(s);
@@ -41,7 +30,7 @@ public class Fakultet {
         for (Upis upis : spisakUpisa) {
             String predmet = upis.getPredmet().getIme();
             if (predmet.equals(trazeniPredmet)) {
-                spisak += upis.getStudent().getIme() + " " + upis.getStudent().getPrezime() + "\n";
+                spisak += upis.getStudent().getIme() + " " + upis.getStudent().getPrezime() + " " + upis.getStudent().getBrojIndeksa() + "\n";
             }
         }
         return spisak;
