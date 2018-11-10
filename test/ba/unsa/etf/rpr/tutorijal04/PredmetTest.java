@@ -10,7 +10,7 @@ class PredmetTest {
         Predmet predmet = new Predmet("RPR", 5, true);
         assertAll(
                 () -> assertEquals("RPR", predmet.getIme()),
-                () -> assertEquals((Integer)5, predmet.getEcts()),
+                () -> assertEquals((Integer) 5, predmet.getEcts()),
                 () -> assertEquals(true, predmet.isIzborni())
         );
     }
