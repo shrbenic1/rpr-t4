@@ -44,14 +44,14 @@ public class Fakultet {
     public String dajSpisak(Predmet p) {
         String spisak = "";
         String trazeniPredmet = p.getIme();
-        for(Upis upis : spisakUpisa){
+        for (Upis upis : spisakUpisa) {
             String predmet = upis.getPredmet().getIme();
-            if(predmet.equals(trazeniPredmet)) {
+            if (predmet.equals(trazeniPredmet)) {
                 spisak += upis.getStudent().getIme() + " " + upis.getStudent().getPrezime() + "\n";
             }
         }
         return spisak;
     }
-    }
 }
+
 
